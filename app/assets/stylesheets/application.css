@@ -13,5 +13,13 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
 
 /* master added */
+=======
+body {
+  margin: 0;
+}
+
+/* development added */
+>>>>>>> development
