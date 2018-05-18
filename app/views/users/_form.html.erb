@@ -1,0 +1,26 @@
+<% if @user.errors.any? %>
+  <div class="alert alert-danger">
+    <h5><%= t('common.errors') %></h5>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @user do |f| %>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :presence %>
+    <%= f.check_box :presence %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit 'Сохранить', class: 'btn btn-primary' %>
+  </div>
+<% end %>
