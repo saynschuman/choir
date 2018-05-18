@@ -5,9 +5,6 @@
       <th scope="col">#</th>
       <th scope="col">admin</th>
       <th scope="col">email</th>
-      <th scope="col">presence</th>
-      <th scope="col">link</th>
-      <th scope="col">edit</th>
     </tr>
   </thead>
   <tbody>
@@ -21,16 +18,7 @@
       </td>
       <td>
         <%= user.email %>
-      </td>
-      <td>
-        <%= user.presence %>
-      </td>
-      <td>
-        <%= link_to 'перейти', user %>
-      </td>
-      <td>
-        <%= link_to 'изменить', edit_user_path(user) %>
-      </td>
+      </td>      
     </tr>
     <% end %>
   </tbody>
