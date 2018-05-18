@@ -1,3 +1,7 @@
 Хорист <%= @user.email %>
 <br><br>
-<%= @user.presence %>
+<% if @user.presence %>
+<div>буду</div>
+<% else %>
+<div>не буду</div>
+<% end %>
