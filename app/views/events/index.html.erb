@@ -1,0 +1,19 @@
+<h2>Спевки</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Дата</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @events.each do |event| %>
+    <tr>
+      <th scope="row">
+        <%= event.date %>
+      </th>
+      
+    </tr>
+    <% end %>
+  </tbody>
+</table>
